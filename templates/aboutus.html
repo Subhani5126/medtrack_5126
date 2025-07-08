@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medtrack - Advanced Healthcare Platform</title>
+    <meta name="description" content="Comprehensive healthcare platform connecting patients with top medical professionals">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                   colors: {
+    primary: "#3b82f6",
+    secondary: "#1e40af",
+    accent: "#10b981",
+    dark: "#1e293b",
+    light: "#f8fafc",
+    greenbg: "#32CD32" // custom green
+},
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #3bf6a5dc 0%, #10b981 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-green-600">
+    <!-- Top Announcement Bar -->
+    <div class="bg-green-700  text-white text-center py-2 px-4">
+        <p class="text-sm">24/7 Emergency Hotline: <strong>1-800-MEDTRACK</strong></p>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-heartbeat text-3xl text-green-500"></i>
+                <span class="text-2xl font-bold text-dark">MEDTRACK</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-dark hover:text-primary font-medium">Home</a>
+                <a href="#services" class="text-dark hover:text-primary font-medium">Services</a>
+                <a href="#doctors" class="text-dark hover:text-primary font-medium">Doctors</a>
+                <a href="#about" class="text-dark hover:text-primary font-medium">About</a>
+                <a href="#contact" class="text-dark hover:text-primary font-medium">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-4"> Login 
+                <a href="#login" class="text-dark hover:text-primary">
+                    <i class="fas fa-user-circle text-xl"></i>
+                </a>
+                <button class="md:hidden text-dark">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+<!-- Hero Section -->
+<section class="hero-gradient text-white min-h-screen flex flex-col items-center justify-center text-center px-4">
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">About MediCare Plus</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our commitment to excellence in healthcare since 2005</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <img src="https://static.wixstatic.com/media/3f53d8_bdcf4e201b9c4409ac60a1e0f1b2bf7c~mv2.png/v1/fill/w_2500,h_1353,al_c/3f53d8_bdcf4e201b9c4409ac60a1e0f1b2bf7c~mv2.png" alt="Modern hospital facility with advanced equipment" class="rounded-lg shadow-xl" loading="lazy">
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-dark mb-4">Our Story</h3>
+                    <p class="text-gray-600 mb-6">Founded in 2005, MediCare Plus has grown from a single clinic to a network of state-of-the-art healthcare facilities across the country. Our mission has always been to provide accessible, high-quality healthcare to all.</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-xl font-bold text-dark mb-3">Our Mission</h4>
+                        <p class="text-gray-600 mb-4">To deliver exceptional patient-centered care through innovation, compassion, and clinical excellence.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-xl font-bold text-dark mb-3">Our Values</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>Patient-first approach in all we do</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>Commitment to medical excellence</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>Continuous innovation in treatments</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>Compassionate care for all patients</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-dark mb-8 text-center">Our Achievements</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-2">Best Hospital Award 2022</h4>
+                        <p class="text-gray-600">Recognized as the top healthcare provider in the region by HealthCare Excellence Awards.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-2">JCI Accredited</h4>
+                        <p class="text-gray-600">Fully accredited by Joint Commission International for meeting global healthcare standards.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-2">95% Patient Satisfaction</h4>
+                        <p class="text-gray-600">Consistently high patient satisfaction scores across all our facilities.</p>
+                    </div>
+                </div>
+            </div>
+
+</section>
