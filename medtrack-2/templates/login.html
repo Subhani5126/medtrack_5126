@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medtrack - Advanced Healthcare Platform</title>
+    <meta name="description" content="Comprehensive healthcare platform connecting patients with top medical professionals">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+    primary: "#3b82f6",
+    secondary: "#1e40af",
+    accent: "#10b981",
+    dark: "#1e293b",
+    light: "#f8fafc",
+    greenbg: "#32CD32" // custom green
+},
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg,  #3bf6a5dc 0%, #10b981 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-green-500">
+    <!-- Top Announcement Bar -->
+    <div class="bg-green-700 text-white text-center py-2 px-4">
+        <p class="text-sm">24/7 Emergency Hotline: <strong>1-800-MEDTRACK</strong></p>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-heartbeat text-3xl text-green-500"></i>
+                <span class="text-2xl font-bold text-dark">MEDTRACK</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-dark hover:text-primary font-medium">Home</a>
+                <a href="#services" class="text-dark hover:text-primary font-medium">Services</a>
+                <a href="#doctors" class="text-dark hover:text-primary font-medium">Doctors</a>
+                <a href="#about" class="text-dark hover:text-primary font-medium">About</a>
+                <a href="#contact" class="text-dark hover:text-primary font-medium">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+<section class="hero-gradient text-white min-h-screen flex flex-col items-center justify-center text-center px-4">
+<!-- Login Form Section -->
+<section class="flex justify-center items-center min-h-screen bg-light">
+  <div class="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
+    <h2 class="text-3xl font-semibold text-center text-dark mb-6">Login</h2>
+    <form action="success.html" method="post">
+      <table class="w-full table-auto border-collapse">
+        <tbody>
+          <tr class="bg-green-500 hover:bg-gray-100 transition">
+            <td class="py-3 px-4 font-medium text-dark text-sm">Email or Username</td>
+            <td class="py-3 px-4">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </td>
+          </tr>
+          <tr class="bg-green-500 hover:bg-gray-50 transition">
+            <td class="py-3 px-4 font-medium text-dark text-sm">Password</td>
+            <td class="py-3 px-4">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="text-center py-4">
+              <input
+                type="submit"
+                value="Login"
+                class="bg-green-800 text-white px-6 py-2 rounded-md hover:bg-green-800 transition font-semibold"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</section>
+</section>
+</html>
